@@ -33,18 +33,39 @@ nav {
   display:flex;
   align-items:center;
   justify-content:space-between;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08);
+  position: relative; 
 }
 .container{
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px 0 15px
-}*/
+}
 .header-div-nav{
   display: flex; 
   align-items: center;
 }
 .nav-ul-a-href{
   padding: 24px 0;
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-ul-a-href::after{
+color: #404bbf;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+.nav-ul-a-href:hover,
+.nav-ul-a-href:focus{
+  color: #404bbf;
 }
 /* голова и в нем супєр лого A*/
 .web-text{
@@ -85,11 +106,12 @@ nav {
 
 /* вторая секцияояояоя B*/
 .main-section{
+  
   padding: 188px 0;
-  /*background: #2e2f42 rgba(0, 0, 0, 0.5);*/
+  background: #2e2f42 rgba(0, 0, 0, 0.5);
   color: #fff;
 
-background-color: rgba(58, 57, 82, 0.774);
+
 background-image: url("images/banking-app.jpeg");
 background-repeat: no-repeat;
 background-position: center;
