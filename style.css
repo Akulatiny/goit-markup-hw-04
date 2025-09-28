@@ -27,6 +27,7 @@ nav {
  /* ГОЛОВОО виз НАВВВВ ВИГЕЙШИНС*/
 .header-header{
   border-bottom: 1px solid #e7e9fc;
+  box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .header-div-container{
   padding: 32px 0;
@@ -45,11 +46,14 @@ nav {
   display: flex; 
   align-items: center;
 }
-.nav-ul-a-href{
-  padding: 24px 0;
+.nav-ul-a{
+  padding: 24px 0 24px;
   position: relative;
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-ul-a-href{
+  padding: 24px 0;
 }
 .nav-ul-a-href::after{
 color: #404bbf;
@@ -66,6 +70,7 @@ color: #404bbf;
 .nav-ul-a-href:hover,
 .nav-ul-a-href:focus{
   color: #404bbf;
+  
 }
 /* голова и в нем супєр лого A*/
 .web-text{
@@ -89,9 +94,6 @@ color: #404bbf;
 .header-div-nav-ul{
   display: flex; 
   gap: 40px;
-}
-.nav-ul-a{
-  padding: 24px 0 24px;
 }
 /* голова в котором адресут первая A */
 .header-div-nav-address{
