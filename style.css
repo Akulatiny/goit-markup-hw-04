@@ -50,13 +50,13 @@ nav {
 .nav-ul-a{
   padding: 24px 0 24px;
 }
-.nav-ul-a > .nav-ul-a-href{
+.nav-ul-a{
   padding: 24px 0;
   position: relative;
   color: #404bbf; 
 }
 
-.nav-ul-a > .nav-ul-a-href::after{
+.nav-ul-a ::after{
   content: '';
   width: 100%;
   position: absolute;
