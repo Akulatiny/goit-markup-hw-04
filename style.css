@@ -56,7 +56,7 @@ nav {
   color: #404bbf; 
 }
 
-.nav-ul-a ::after{
+.nav-ul-a::after{
   content: '';
   width: 100%;
   position: absolute;
