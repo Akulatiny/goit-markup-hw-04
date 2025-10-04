@@ -11,19 +11,6 @@ a  {
   text-decoration: none;
   color: #2e2f42
 }
-.all-social-icons{
-  width: 40px;
-  height: 40px;
-}
-.use-icon-icon{
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-   background-color: #31d0aa;
-}
 img {
   display: block;
 }
@@ -40,52 +27,46 @@ nav {
  /* ГОЛОВОО виз НАВВВВ ВИГЕЙШИНС*/
 .header-header{
   border-bottom: 1px solid #e7e9fc;
-  box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 
+  0px 2px 1px rgba(46, 47, 66, 0.08), 
+  0px 1px 1px rgba(46, 47, 66, 0.16), 
+  0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-div-container{
   padding: 32px 0;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08);
-  position: relative; 
 }
 .container{
   width: 1158px;
   margin: 0 auto;
-  padding: 0 15px 0 15px;
-  display: flex;
-  align-items: baseline;
-}
+  padding: 0 15px 0 15px
+}*/
 .header-div-nav{
   display: flex; 
   align-items: center;
 }
 .nav-ul-a{
   padding: 24px 0 24px;
-  position: relative;
-  color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-ul-a-href{
+.nav-ul-a > .nav-ul-a-href{
   padding: 24px 0;
+  position: relative;
+  color: #404bbf; 
 }
-.nav-ul-a-href::after{
-color: #404bbf;
+
+.nav-ul-a > .nav-ul-a-href::after{
   content: '';
   width: 100%;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
-
   position: absolute;
   left: 0;
   bottom: -1px;
-}
-.nav-ul-a-href:hover,
-.nav-ul-a-href:focus{
-  color: #404bbf;
-  
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px; 
+  transition:color 250ms,cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 /* голова и в нем супєр лого A*/
 .web-text{
@@ -105,7 +86,7 @@ color: #404bbf;
   color: #2e2f42;
 }
 
-/* голова и нав по страничке A*/
+/* голова и нав по страничке без контактов A*/
 .header-div-nav-ul{
   display: flex; 
   gap: 40px;
@@ -119,28 +100,18 @@ color: #404bbf;
   gap: 40px;
   font-style: normal;
 }
+.add-ul-a{
+  transition:color 250ms,cubic-bezier(0.4, 0, 0.2, 1);
+}
 /**-------------------------*/
 
 /* вторая секцияояояоя B*/
 .main-section{
-  
   padding: 188px 0;
-  background: #2e2f42 rgba(0, 0, 0, 0.5);
+  background: #2e2f42;
   color: #fff;
-
-
-background-image: url("images/banking-app.jpeg");
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-/*max-width: 1200px;*/
-margin: auto;
-margin-bottom: 72px;
-
+  /*background-image url: ;!!!!!!!!!!*/
 }
-/*.main-section {
-  background: opac 0.5; 
-}*/
 .main-section-div-container{
 
 }
@@ -187,9 +158,6 @@ margin-bottom: 72px;
 }
 .c-container-h-tittle{
 
-}
-.c-ul-li-svg{
-  background-color:#F4F4FD;
 }
 .visually-hidden {
   position: absolute;
@@ -258,8 +226,6 @@ margin-bottom: 72px;
   column-gap: 24px;
   row-gap: 48px;
   text-align:center;
-  box-shadow: 0 1px 6px 0 #2E2F4229; /* x y blur И radius(на скок большой тень будет )ей*/
-  border-radius: 0 0 4px 4px;
 }
 .image-d{
     background-color: #FFFFFF;
@@ -278,11 +244,6 @@ margin-bottom: 72px;
 }
 .d-paragraph{
   text-align: center;
-}
-.d-ul-li-svg{
-  fill:transparent;
-  stroke:#F4F4FD;
-  background-color: #4D5AE5;
 }
 /*_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_*/
 
@@ -312,45 +273,13 @@ margin-bottom: 72px;
 }
 .e-ul-li{
 width: calc((100% - 48px) / 3);
-
-}
-.e-ul-li:hover .e-ul-li-content{
-transform: translateY(0);
 }
 .e-ul-li-img{
 }
-.e-ul-li-div-content{
-
-}
-.e-ul-li-div-content{
-position: relative;
-overflow: hidden;
-}
-.e-ul-li-content{
-position: absolute;
-top: 0;
-left: 0;
-background-color: #4D5AE5;
-color: #fff;
-padding: 40px;
-width:360px;
-height:300px;
-transform: translateY(100%);
-transition: transform 0.3s ease-in-out;
-}
-
-.e-ul-li-div-content:hover .e-ul-li-content {
-/*  bottom: 0;  /* при наведении блок "вылазит" */
-}
-*/
-
 .e-ul-li-img-container{
 padding: 32px 16px;
 border: 1px solid #e7e9fc;
 border-top: none;
-
-
-/*єто радийс углов нужен в сеукции портфолио с людьми*/
 }
 .e-ul-li-h-list-portfolio{
 margin-bottom: 8px;
@@ -363,10 +292,6 @@ margin-bottom: 8px;
       background-color:#2e2f42;
       padding: 100px 0;
      
-     }
-     .f-div{
-       margin-right: 120px;
-
      }
     .web-accent-w-f{
       color: #f4f4fd;
@@ -392,23 +317,4 @@ margin-bottom: 8px;
       letter-spacing: 0.02em;
     
     }
-    .f-div-icons{
-
-    }
-    .f-div-icons-p{
- font-weight: 500;
- font-size: 16px;
- line-height: 1.5;
- letter-spacing: 0.02em;
- color:#FFFFFF;
- margin-bottom: 16px;
-    }
-    .f-div-icons-ul{
-      display: flex;
-      gap: 16px;
-
-    }
-
-
-
- 
+  
