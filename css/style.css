@@ -50,12 +50,12 @@ nav {
 .nav-ul-a{
   padding: 24px 0 24px;
 }
-.nav-ul-a{
+.nav-ul-a>.nav-ul-a-href{
   padding: 24px 0;
   position: relative;
   color: #404bbf; 
 }
-.nav-ul-a::after {
+.nav-ul-a>.nav-ul-a-href::after {
   content: '';
   width: 100%;
   position: absolute;
@@ -110,7 +110,7 @@ nav {
   color: #fff;
   background-image: 
   linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-  url(..images/work-pupl.jpeg);
+  url(../images/work-pupl.jpeg);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -322,5 +322,4 @@ margin-bottom: 8px;
       letter-spacing: 0.02em;
     
     }
-
   
